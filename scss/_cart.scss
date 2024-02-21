@@ -1,0 +1,27 @@
+/* Style for the cart quantity container */
+.cart-quantity-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the minus and plus buttons */
+
+
+/* Style for the quantity input */
+.quantity-input {
+    text-align: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: 1px solid $gray-500;
+    border-radius: 0.5rem;
+}
+.dropdown-card-body{
+    font-size: 10px;
+}
+.dropdown-card{
+    border: none;
+    width:250px;
+}
+.cart-items:hover{
+    background: $gray-300;
+}

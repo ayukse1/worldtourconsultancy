@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 13px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: $light;
+}
+i{
+    padding: 0;
+    margin: 0;
+    transition: all .5s ease;
+}
+.logo{
+    width: 3rem;
+}
+// buttons
+%btn-shared{ 
+    display: inline-block;
+    transition: all .5s ease;
+    border:none;
+    cursor:pointer;
+    border-radius: 1rem;
+}
+
+.btn{
+    &-light{
+        @extend %btn-shared;
+        background-color: $light;
+        color: $dark;
+    }
+    &-social{
+        @extend %btn-shared;
+        background-color: $light;
+        color: $dark;
+        width: 3rem;
+        height: 3rem;
+    }
+    &-primary{
+        @extend %btn-shared;
+        background-color: $primary;
+        color: $light;
+    }
+    &-warning{
+        @extend %btn-shared;
+        background-color: $warning;
+        color: $light;
+    }
+    &-shadow{
+        @extend %btn-shared;
+        background-color: $light;
+        color: $dark;
+        width: 100%;
+        height: 100%;
+    }
+    &-gray{
+        @extend %btn-shared;
+        background-color: $dark;
+        color: $light;
+        width: 100%;
+        height: 100%;
+    }
+    &-quantity{
+        @extend %btn-shared;
+        color: $dark;
+        background-color: $light;
+        border: 1px solid $gray-500;
+        border-radius: 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 0;
+    }
+    &-cart{
+        @extend %btn-shared;
+        color: $dark;
+        border-radius: 0.5rem;
+        height: 2.5rem;
+        width: 2.5rem;
+        margin: 0;
+    }
+    &-cart-2{
+        @extend %btn-shared;
+        color: $dark;
+        margin: 0;
+        border-radius: 0.5rem;
+    }
+}
+
+// btn hovers
+
+.btn-light:hover{
+    color: $light;
+    background-color: $secondary;
+}
+.btn-light i{
+    color: $dark;
+}
+.btn-light:hover i{
+    color: $light;
+}
+
+.btn-social:hover{
+    color: $light;
+    background-color: $secondary;
+}
+
+.btn-primary:hover{
+    color: $dark;
+    background-color: $light;
+}
+.btn-warning:hover{
+    color: $light;
+    background-color: $dark;
+}
+.btn-shadow:hover{
+    color: $dark;
+    background-color: $gray-200;
+}
+.btn-gray:hover{
+    background-color: $gray-700;
+    color: $light;
+}
+.btn-quantity:hover{
+    background: $gray-500;
+    color: $dark;
+}
+.btn-cart:hover{
+    background: $gray-500;
+    border-radius: 0.5rem;
+    color: $dark;
+}
+.btn-cart-2:hover{
+    background: $gray-500;
+    border-radius: 0.5rem;
+    color: $dark;
+}
+
+
+
+// forms
+.form-control{
+    border-radius: 1rem;
+}
+
+// dropdown
+.dropdown-menu{
+    a{
+        color: $light;
+    }
+}
+
+.fa-star{
+    color: #ff9529;
+}
+
+.image-container{
+    overflow: hidden;
+}
+
+.img-card{
+    object-fit: cover;
+}
+
+.img-card:hover{
+    transform: scale(125%);
+    transition: all .5s ease; 
+}
+
+// forms
+[type="date"] {
+    background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+    display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+label {
+    display: block;
+}
+.date-form {
+    input {
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        padding: 5px 5px;
+    }
+}
+.time-form{
+    input{
+        border: 1px solid #c4c4c4;
+        border-radius: 5px;
+        padding: 5px 5px;
+    }
+}
+.form-select{
+    max-width: 20rem;
+}
+#modal, #modal2{
+    .login-container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 8px;
+      }
+      input {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+      }
+      #news{
+        width:auto;
+      }
+
+}
+
+.wishlist{
+    .card{
+        .image-container{
+            position: relative;
+            .badge{
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+        }
+    }
+}
